@@ -8,6 +8,6 @@ export DOCKER_BUILDKIT=1
 
 docker pull pjcdawkins/platformsh-cli:latest
 
-docker build -t axelerant/platformsh-cli:latest ${dir}/
+docker build --progress=plain -t axelerant/platformsh-cli:latest ${dir}/
 
 docker push axelerant/platformsh-cli:latest
